@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez [PRÉNOM] [NOM], étudiant en BTS SIO option SISR, pour une opportunité de stage, d'alternance ou d'emploi.">
+    <title>Contact | Portfolio BTS SIO SISR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-brand">
+                <i class="fas fa-network-wired"></i> [PRÉNOM] [NOM]
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="bts-sio.html" class="nav-link">BTS SIO</a></li>
+                <li><a href="parcours.html" class="nav-link">Parcours</a></li>
+                <li><a href="projets.html" class="nav-link">Projets</a></li>
+                <li><a href="stages.html" class="nav-link">Stages</a></li>
+                <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="patrimoine.html" class="nav-link">Patrimoine</a></li>
+                <li><a href="veille.html" class="nav-link">Veille</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Changer de thème"><i class="fas fa-sun"></i></button>
+                <button class="hamburger" aria-label="Menu mobile"><i class="fas fa-bars"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Me <span>Contacter</span></h1>
+            <p>Une question, une proposition de stage, d'alternance ou d'emploi ? N'hésitez pas à m'écrire.</p>
+        </section>
+
+        <div class="container">
+            <div class="grid-2" style="align-items: start;">
+                <!-- Coordonnées et réseaux -->
+                <div class="card">
+                    <h3><i class="fas id-card"></i> Coordonnées professionnelles</h3>
+                    <p style="margin-bottom: 1.5rem;">Vous pouvez me joindre directement via les canaux ci-dessous ou en remplissant le formulaire de contact.</p>
+                    
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="fas fa-envelope" style="color: var(--accent-cyan);"></i>
+                            <a href="mailto:[EMAIL]" style="color: var(--text-secondary); text-decoration: none;">[EMAIL]</a>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="fab fa-linkedin" style="color: var(--accent-cyan);"></i>
+                            <a href="[LIEN LINKEDIN]" target="_blank" style="color: var(--text-secondary); text-decoration: none;">Profil LinkedIn</a>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="fab fa-github" style="color: var(--accent-cyan);"></i>
+                            <a href="[LIEN GITHUB]" target="_blank" style="color: var(--text-secondary); text-decoration: none;">Profil GitHub</a>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--accent-cyan);"></i>
+                            <span style="color: var(--text-secondary);">[VILLE] — France</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Formulaire Front-End -->
+                <div class="card">
+                    <h3><i class="fas fa-paper-plane"></i> Formulaire de contact</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; font-style: italic;">
+                        Note : Interface front-end (aucun backend configuré pour l'instant).
+                    </p>
+
+                    <form id="contact-form" onsubmit="event.preventDefault(); alert('Message simulé envoyé avec succès ! (Interface front-end)');">
+                        <div style="margin-bottom: 1rem;">
+                            <label for="nom" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-size: 0.9rem;">Nom / Prénom</label>
+                            <input type="text" id="nom" name="nom" required style="width: 100%; padding: 0.75rem; background-color: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 0.375rem; color: var(--text-primary);">
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-size: 0.9rem;">Adresse Email</label>
+                            <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; background-color: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 0.375rem; color: var(--text-primary);">
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <label for="sujet" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-size: 0.9rem;">Sujet</label>
+                            <input type="text" id="sujet" name="sujet" required style="width: 100%; padding: 0.75rem; background-color: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 0.375rem; color: var(--text-primary);">
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="message" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-size: 0.9rem;">Message</label>
+                            <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 0.75rem; background-color: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 0.375rem; color: var(--text-primary); resize: vertical;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="[LIEN LINKEDIN]" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="[LIEN GITHUB]" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:[EMAIL]" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="legal-notice">© 2026 Pierluigi SPANO — Portfolio BTS SIO SISR | <a href="contact.html" style="color: var(--accent-cyan); text-decoration: none;">Mentions légales</a></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
